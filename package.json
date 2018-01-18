@@ -5,7 +5,8 @@
   "author": "Boardtrac",
   "private": true,
   "scripts": {
-    "publish": "build --win -p always",
+    "publish":
+      "ELECTRON_BUILDER_ALLOW_UNRESOLVED_DEPENDENCIES=true build --win -p always",
     "electron": "electron .",
     "pack": "electron-builder --dir",
     "dist":
@@ -18,13 +19,20 @@
     "electron-builder": "^19.52.1"
   },
   "dependencies": {
-    "BoardtracPlus":
-      "git+https://bitbucket.org/safetrac/bt_user_portal.git#2ad3000b0f89e3cf03fb5d92e1a983dd654c9a6d",
     "electron-log": "^1.3.0",
-    "electron-updater": "^2.19.1"
+    "electron-updater": "^2.19.1",
+    "BoardtracPlus":
+      "git+https://bitbucket.org/safetrac/bt_user_portal.git#2ad3000b0f89e3cf03fb5d92e1a983dd654c9a6d"
   },
   "build": {
     "appId": "com.github.todanley.installer-updater",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "todanley",
+        "repo": "installer-updater"
+      }
+    ],
     "win": {
       "target": "nsis"
     }
