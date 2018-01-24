@@ -35,6 +35,11 @@
     ],
     "win": {
       "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.productivity",
+      "type": "distribution"
     }
   }
 }
