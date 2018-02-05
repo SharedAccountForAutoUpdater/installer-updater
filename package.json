@@ -1,12 +1,12 @@
 {
   "name": "btp",
   "description": "BTP desktop application",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "Boardtrac",
   "private": true,
   "scripts": {
     "publish":
-      "ELECTRON_BUILDER_ALLOW_UNRESOLVED_DEPENDENCIES=true build --win -p always",
+      "ELECTRON_BUILDER_ALLOW_UNRESOLVED_DEPENDENCIES=true build --mac -p always",
     "electron": "electron .",
     "pack": "electron-builder --dir",
     "dist":
@@ -16,20 +16,20 @@
   "devDependencies": {
     "devtron": "^1.4.0",
     "electron": "^1.7.10",
-    "electron-builder": "^19.52.1"
+    "electron-builder": "^19.56.0"
   },
   "dependencies": {
     "electron-log": "^1.3.0",
     "electron-updater": "^2.19.1",
     "BoardtracPlus":
-      "git+https://bitbucket.org/safetrac/bt_user_portal.git#2ad3000b0f89e3cf03fb5d92e1a983dd654c9a6d"
+      "git+https://bitbucket.org/safetrac/bt_user_portal.git#75d67db84332caa79190a0503352aa8eef484bb9"
   },
   "build": {
-    "appId": "com.github.todanley.installer-updater",
+    "appId": "com.github.SharedAccountForAutoUpdater.installer-updater",
     "publish": [
       {
         "provider": "github",
-        "owner": "todanley",
+        "owner": "SharedAccountForAutoUpdater",
         "repo": "installer-updater"
       }
     ],
