@@ -1,7 +1,7 @@
 {
   "name": "btp",
   "description": "BTP desktop application",
-  "version": "0.3.0",
+  "version": "0.2.0",
   "author": "Boardtrac",
   "private": true,
   "scripts": {
@@ -22,7 +22,7 @@
     "electron-log": "^1.3.0",
     "electron-updater": "^2.19.1",
     "BoardtracPlus":
-      "git+https://bitbucket.org/safetrac/bt_user_portal.git#75d67db84332caa79190a0503352aa8eef484bb9"
+      "git+https://bitbucket.org/safetrac/bt_user_portal.git#e25f0c0b84c3c4444839cc0b1be7c37faf4bf732"
   },
   "build": {
     "appId": "com.github.SharedAccountForAutoUpdater.installer-updater",
